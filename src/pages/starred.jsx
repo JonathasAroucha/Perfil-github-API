@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
-
 import Container from '../components/container'
 import StarredContainer from '../components/starredContainer'
-
 import { context } from '../context'
 
 const Starred = () => {
@@ -10,7 +8,8 @@ const Starred = () => {
 
     return (
         <Container>
-            <StarredContainer name={ctx.userData?.name} starred={ctx.userStarred} />
+            <StarredContainer name={ctx.userData?.name}
+                starred={ctx.userStarred} />
         </Container>
     )
 

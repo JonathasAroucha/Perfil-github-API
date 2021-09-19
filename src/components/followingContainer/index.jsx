@@ -11,9 +11,11 @@ const FollowingContainer = props => {
         <Section>
             <Title>Perfis que {(props.name)?.split(' ')[0]} segue :</Title>
             <ListOfFollowingContainer>
-            {(props?.following).map(followin => (
-                    <Followin onClick={() => window.location.href(followin?.html_url)} key={followin?.login}>
-                        <ProfileFollowing src={followin?.avatar_url} alt={followin?.alternativeText} /><p>- {followin?.login} </p>
+                {(props?.following).map(followin => (
+                    <Followin onClick={() => window.location.href(followin?.html_url)}
+                        key={followin?.login}>
+                        <ProfileFollowing src={followin?.avatar_url}
+                            alt={followin?.alternativeText} /><p>- {followin?.login} </p>
                     </Followin>
                 ))}
             </ListOfFollowingContainer>

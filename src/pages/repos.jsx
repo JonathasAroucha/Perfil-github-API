@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
-
 import Container from '../components/container'
 import ReposContainer from '../components/reposContainer'
-
 import { context } from '../context'
 
 const Repos = () => {
@@ -10,7 +8,8 @@ const Repos = () => {
 
     return (
         <Container>
-            <ReposContainer name={ctx.userData?.name} repos={ctx.userRepos} />
+            <ReposContainer name={ctx.userData?.name}
+                repos={ctx.userRepos} />
         </Container>
     )
 

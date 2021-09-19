@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
-
 import Container from '../components/container'
 import FollowersContainer from '../components/followersContainer'
-
 import { context } from '../context'
 
 const Followers = () => {
@@ -10,7 +8,8 @@ const Followers = () => {
 
     return (
         <Container>
-            <FollowersContainer name={ctx.userData?.name} followers={ctx.userFollowers} />
+            <FollowersContainer name={ctx.userData?.name}
+                followers={ctx.userFollowers} />
         </Container>
     )
 
