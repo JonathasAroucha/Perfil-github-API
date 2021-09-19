@@ -45,9 +45,11 @@ export const Title = styled.h1`
 
 export const ListOfStarredContainer = styled.h1`
   height: 350px;
-  width: 100%;
+  width: auto;
+  padding: 10px;
   overflow-y: scroll;
   overflow-x: hidden;
+  border-radius: 05px;
 `;
 
 export const Starre = styled.h2`
@@ -56,7 +58,6 @@ export const Starre = styled.h2`
   background: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 10px;
-  padding-left: 10px;
   margin-bottom: 10px;
 
   h2 {

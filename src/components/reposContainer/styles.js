@@ -45,9 +45,11 @@ export const Title = styled.h1`
 
 export const ListOfReposContainer = styled.h1`
   height: 350px;
-  width: 100%;
+  width: auto;
+  padding: 10px;
   overflow-y: scroll;
   overflow-x: hidden;
+  border-radius: 05px;
 `;
 
 export const Repo = styled.h2`

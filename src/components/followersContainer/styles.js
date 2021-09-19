@@ -82,8 +82,9 @@ export const Follower = styled.h2`
     line-height: 1.1;
     font-weight: 700;
 
-    @media (max-width: 345px) {
-      font-size: 10px;
+    @media (max-width: 445px) {
+      height: auto;
+      font-size: 12px;
     }
   }
 
@@ -102,7 +103,7 @@ export const ProfileFollowers = styled.img`
   border-radius: 50%;
   border: 2px solid #000000;
 
-  @media (max-width: 445px) {
+  @media (max-width: 645px) {
     width: auto;
     margin-left: 0px;
   }

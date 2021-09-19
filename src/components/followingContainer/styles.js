@@ -57,7 +57,6 @@ export const Followin = styled.h2`
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: auto;
   height: auto;
   background: rgba(0, 0, 0, 0.2);
@@ -84,7 +83,7 @@ export const Followin = styled.h2`
     font-weight: 700;
 
     @media (max-width: 445px) {
-      font-size: 15px;
+      font-size: 12px;
       height: auto;
     }
   }
