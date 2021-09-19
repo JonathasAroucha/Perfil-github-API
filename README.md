@@ -21,14 +21,14 @@ Deve acessar o link: ( https://perfilgithubapi-jonathasaroucha.netlify.app/ ) Em
 ![Perfil-Github (5)](https://user-images.githubusercontent.com/77129503/133943633-a9df4f6e-6f4f-41eb-bd97-566bf8af2031.png)
 ![Perfil-Github (6)](https://user-images.githubusercontent.com/77129503/133943636-a9deb8e7-c82d-40b4-8081-ceade0efb496.png)
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/77129503/133943673-7cfac927-6f80-4fdc-8471-656413919f27.jpeg" width="300" />
-  <img src="https://user-images.githubusercontent.com/77129503/133943674-1be7ed59-8eb6-4a18-be3a-06e1d3120160.jpeg" width="300" /> 
-  <img src="https://user-images.githubusercontent.com/77129503/133943679-a54de6c2-5109-44d5-9e81-53cfe4eee78f.jpeg" width="300" />
+  <img src="https://user-images.githubusercontent.com/77129503/133943673-7cfac927-6f80-4fdc-8471-656413919f27.jpeg" width="200" />
+  <img src="https://user-images.githubusercontent.com/77129503/133943674-1be7ed59-8eb6-4a18-be3a-06e1d3120160.jpeg" width="200" /> 
+  <img src="https://user-images.githubusercontent.com/77129503/133943679-a54de6c2-5109-44d5-9e81-53cfe4eee78f.jpeg" width="200" />
 </p>
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/77129503/133943681-1ea6fcee-f9ad-47c4-82ae-6295f1b2484c.jpeg" width="300" />
-  <img src="https://user-images.githubusercontent.com/77129503/133943683-b3883fca-b867-4fc8-bea7-973882dd9932.jpeg" width="300" /> 
-  <img src="https://user-images.githubusercontent.com/77129503/133943685-8fa3c70d-6452-42b7-820e-ecd99b72742f.jpeg" width="300" />
+  <img src="https://user-images.githubusercontent.com/77129503/133943681-1ea6fcee-f9ad-47c4-82ae-6295f1b2484c.jpeg" width="200" />
+  <img src="https://user-images.githubusercontent.com/77129503/133943683-b3883fca-b867-4fc8-bea7-973882dd9932.jpeg" width="200" /> 
+  <img src="https://user-images.githubusercontent.com/77129503/133943685-8fa3c70d-6452-42b7-820e-ecd99b72742f.jpeg" width="200" />
 </p>
 
 📚 Tecnologias e Bibliotecas utilizadas no desenvolvimento desta aplicação:
