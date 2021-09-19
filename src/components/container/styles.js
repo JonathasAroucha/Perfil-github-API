@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.main`
   width: 100%;
   height: 100vh;
-  padding: 10px;
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
