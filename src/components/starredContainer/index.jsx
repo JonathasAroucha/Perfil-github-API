@@ -11,7 +11,7 @@ const StarredContainer = props => {
             <Title>Repositórios mais visitados de {(props.name)?.split(' ')[0]} :</Title>
             <ListOfStarredContainer>
                 {(props?.starred).map(starre => (
-                    <Starre onClick={() => window.location.href(starre?.html_url)}
+                    <Starre onClick={() => window.open(starre?.html_url)}
                         key={starre?.id}>
                         <h2>{starre?.name}</h2>
                         <p>{starre?.description}</p>

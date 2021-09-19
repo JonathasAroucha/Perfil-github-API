@@ -12,7 +12,7 @@ const FollowingContainer = props => {
             <Title>Perfis que {(props.name)?.split(' ')[0]} segue :</Title>
             <ListOfFollowingContainer>
                 {(props?.following).map(followin => (
-                    <Followin onClick={() => window.location.href(followin?.html_url)}
+                    <Followin onClick={() => window.open(followin?.html_url)}
                         key={followin?.login}>
                         <ProfileFollowing src={followin?.avatar_url}
                             alt={followin?.alternativeText} /><p>- {followin?.login} </p>

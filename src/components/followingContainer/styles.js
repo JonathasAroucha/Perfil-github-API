@@ -63,6 +63,7 @@ export const Followin = styled.h2`
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
+  cursor: pointer;
 
   h2 {
     font-size: 15px;
