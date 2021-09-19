@@ -36,10 +36,9 @@ const Header = () => {
 
             setIsloading(false)
         } catch (err) {
-            console.error("Usuário não encontrado!" + err)
+            alert("[ERRO 404] Usuário não encontrado. Digite novamente!")
             setIsloading(false)
             setSearchedValue(null)
-
         }
     }
 
