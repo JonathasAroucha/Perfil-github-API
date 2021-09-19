@@ -93,6 +93,10 @@ export const HeaderSearchButton = styled.button`
   color: #fff;
   transition: all 1s;
 
+  span {
+    font-size: 20px;
+  }
+
   &:hover {
     background: #2f80ed; /* fallback for old browsers */
     background: -webkit-linear-gradient(

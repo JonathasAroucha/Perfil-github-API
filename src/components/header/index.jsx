@@ -13,8 +13,15 @@ import { context } from '../../context';
 const Header = () => {
     const ctx = useContext(context)
     const [searchedValue, setSearchedValue] = useState('')
+    const [isLoading, setIsloading] = useState(false)
 
-    async function getUserData() {
+    const getUserData = async (event) => {
+        event.preventDefault()
+        if (!searchedValue) {
+            return
+        }
+        setIsloading(true)
+
         try {
             const response = await client.get(`/${searchedValue}`)
             const repos = await client.get(`/${searchedValue}/repos`)
@@ -26,8 +33,13 @@ const Header = () => {
             ctx.setUserStarred(starred.data)
             ctx.setUserFollowers(followers.data)
             ctx.setUserFollowing(following.data)
+
+            setIsloading(false)
         } catch (err) {
-            console.log(err)
+            console.error("Usuário não encontrado!" + err)
+            setIsloading(false)
+            setSearchedValue(null)
+
         }
     }
 
@@ -36,11 +48,17 @@ const Header = () => {
         <HeaderSection>
             <HeaderTitle>Perfil Github</HeaderTitle>
             <HeaderInputContainer>
-                <HeaderInput
-                    value={searchedValue}
-                    onChange={e => setSearchedValue(e.target.value)} />
+                <form onSubmit={getUserData}>
+                    <HeaderInput
+                        value={searchedValue}
+                        placeholder="Digite um usuário do github"
+                        onChange={e => setSearchedValue(e.target.value)} />
+                </form>
                 <HeaderSearchButton onClick={getUserData}>
-                    <FiSearch size={15} />
+                    {isLoading ? (<span>&#8635;</span>
+                    ) : (
+                        <FiSearch size={15} />
+                    )}
                 </HeaderSearchButton>
             </HeaderInputContainer>
         </HeaderSection>
