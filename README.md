@@ -33,8 +33,10 @@ Deve acessar o link: ( https://perfilgithubapi-jonathasaroucha.netlify.app/ ) Em
 
 📚 Tecnologias e Bibliotecas utilizadas no desenvolvimento desta aplicação:
 
-ReactJS.
-JS.
+ReactJS,
+JS,
+HTML,
+CSS,
 React-router-dom.
 Axios.
 Styled-components.
