@@ -1,0 +1,3 @@
+baseURL: "https://developer.github.com/v3/",
+client_id: "d5e96b38cc63601daf55",
+client_secret: "12220e290222e77b1e994b5a5d8a7c1cbcf52980"
