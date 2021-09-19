@@ -37,8 +37,9 @@ ReactJS,
 JS,
 HTML,
 CSS,
-React-router-dom.
-Axios.
+React-router-dom,
+Context,
+Axios,
 Styled-components.
 
 📄 Páginas Principais:
