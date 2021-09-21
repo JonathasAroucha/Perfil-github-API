@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    BrowserRouter as BRouter,
+    BrowserRouter as Router,
     Switch,
     Route
 } from 'react-router-dom';
@@ -11,7 +11,7 @@ import Followers from './pages/followers';
 import Following from './pages/following';
 
 const Routes = () => (
-    <BRouter>
+    <Router>
         <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/repos" component={Repos} />
@@ -19,7 +19,7 @@ const Routes = () => (
             <Route path="/followers" component={Followers} />
             <Route path="/following" component={Following} />
         </Switch>
-    </BRouter>
+    </Router>
 );
 
 export default Routes;

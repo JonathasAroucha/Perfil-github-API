@@ -67,6 +67,10 @@ export const HeaderInput = styled.input`
     width: 220px;
     transition: 0.4s ease;
   }
+
+  @media (max-width: 320px) {
+    width: auto;
+  }
 `;
 
 export const HeaderSearchButton = styled.button`
@@ -112,5 +116,9 @@ export const HeaderSearchButton = styled.button`
     transform: scale(1.05);
     transition: all 1s;
     cursor: pointer;
+  }
+
+  @media (max-width: 320px) {
+    width: auto;
   }
 `;
