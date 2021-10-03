@@ -69,9 +69,9 @@ const Header = () => {
                     )}
                 </HeaderSearchButton>
             </HeaderInputContainer>
-                    {erro ? (
-                        <MsgDeErro>Usuário não encontrado!</MsgDeErro>
-                    ) : ('')}
+            {erro ? (
+                <MsgDeErro>Usuário não encontrado!</MsgDeErro>
+            ) : ('')}
         </HeaderSection>
     )
 };

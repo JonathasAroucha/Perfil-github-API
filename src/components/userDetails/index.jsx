@@ -8,7 +8,7 @@ import {
 
 const UserDetails = props => (
     <Container>
-        <Name >{props?.name}</Name>
+        <Name>{props?.name}</Name>
         <Username>{props?.login}</Username>
         <Description>{props?.bio}</Description>
     </Container>
