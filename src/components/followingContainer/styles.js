@@ -1,11 +1,30 @@
 import styled from "styled-components";
 
+export const ButtonsNavigation = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+`
+
+export const Button = styled.button`
+  width: 50px;
+  height: 25px;
+  border-radius: 05px;
+  border: none;
+  background: #2f80ed; 
+  margin-left: 10px;
+  color: #fff;
+  position: relative;
+  bottom: 450px;
+  cursor: pointer;
+`
+
 export const Section = styled.section`
   width: 600px;
   height: 450px;
   padding: 0px 10px;
   background: rgba(255, 255, 255, 0.95);
-  border-radius: 10px;
+  border-radius: 05px;
   border-bottom: 10px solid #2f80ed;
   margin-top: 15px;
   font-family: "Raleway", sans-serif;
@@ -33,6 +52,7 @@ export const Title = styled.h1`
   border-radius: 05px;
   background: #2f80ed;
   color: #fff;
+  margin: 10px 0px;
   width: 50%;
   height: 30px;
   margin-left: 25%;

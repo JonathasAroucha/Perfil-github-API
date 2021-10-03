@@ -2,8 +2,16 @@ import {
     Section,
     Title,
     ListOfStarredContainer,
-    Starre
+    Starre,
+    Button,
+    ButtonsNavigation
 } from './styles';
+import {
+    GoArrowLeft,
+    GoHome,
+    GoArrowRight
+} from "react-icons/go";
+import { Link } from 'react-router-dom'
 
 const StarredContainer = props => {
     return (
@@ -18,6 +26,23 @@ const StarredContainer = props => {
                     </Starre>
                 ))}
             </ListOfStarredContainer>
+            <ButtonsNavigation>
+                <Link to="/repos">
+                    <Button>
+                        <GoArrowLeft size={25} />
+                    </Button>
+                </Link>
+                <Link to="/">
+                    <Button>
+                        <GoHome size={25} />
+                    </Button>
+                </Link>
+                <Link to="/followers">
+                    <Button>
+                        <GoArrowRight size={25} />
+                    </Button>
+                </Link>
+            </ButtonsNavigation>
         </Section>
     );
 }

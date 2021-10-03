@@ -2,8 +2,16 @@ import {
     Section,
     Title,
     ListOfReposContainer,
-    Repo
+    Repo,
+    Button,
+    ButtonsNavigation
 } from './styles';
+
+import {
+    GoHome,
+    GoArrowRight
+} from "react-icons/go";
+import { Link } from 'react-router-dom'
 
 const ReposContainer = props => {
     return (
@@ -18,6 +26,18 @@ const ReposContainer = props => {
                     </Repo>
                 ))}
             </ListOfReposContainer>
+            <ButtonsNavigation>
+                <Link to="/">
+                    <Button>
+                        <GoHome size={25} />
+                    </Button>
+                </Link>
+                <Link to="/starred">
+                    <Button>
+                        <GoArrowRight size={25} />
+                    </Button>
+                </Link>
+            </ButtonsNavigation>
         </Section>
     );
 }

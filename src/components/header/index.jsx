@@ -1,11 +1,16 @@
 import React, { useState, useContext } from 'react';
-import { FiSearch } from 'react-icons/fi';
+import {
+    GoMarkGithub,
+    GoSearch,
+    GoSync
+} from "react-icons/go";
 import {
     HeaderSection,
     HeaderTitle,
     HeaderInputContainer,
     HeaderInput,
-    HeaderSearchButton
+    HeaderSearchButton,
+    MsgDeErro
 } from './styles';
 import client from '../../services/client'
 import { context } from '../../context';
@@ -14,6 +19,7 @@ const Header = () => {
     const ctx = useContext(context)
     const [searchedValue, setSearchedValue] = useState('')
     const [isLoading, setIsloading] = useState(false)
+    const [erro, setErro] = useState(false)
 
     const getUserData = async (event) => {
         event.preventDefault()
@@ -35,8 +41,9 @@ const Header = () => {
             ctx.setUserFollowing(following.data)
 
             setIsloading(false)
+            setErro(false)
         } catch (err) {
-            alert("[ERRO 404] Usuário não encontrado. Digite novamente!")
+            setErro(true)
             setIsloading(false)
             setSearchedValue(null)
         }
@@ -45,7 +52,9 @@ const Header = () => {
 
     return (
         <HeaderSection>
-            <HeaderTitle>Perfil Github</HeaderTitle>
+            <HeaderTitle>
+                <GoMarkGithub /> Perfil Github
+            </HeaderTitle>
             <HeaderInputContainer>
                 <form onSubmit={getUserData}>
                     <HeaderInput
@@ -54,15 +63,17 @@ const Header = () => {
                         onChange={e => setSearchedValue(e.target.value)} />
                 </form>
                 <HeaderSearchButton onClick={getUserData}>
-                    {isLoading ? (<span>&#8635;</span>
+                    {isLoading ? (<GoSync size={20} />
                     ) : (
-                        <FiSearch size={15} />
+                        <GoSearch size={15} />
                     )}
                 </HeaderSearchButton>
             </HeaderInputContainer>
+                    {erro ? (
+                        <MsgDeErro>Usuário não encontrado!</MsgDeErro>
+                    ) : ('')}
         </HeaderSection>
     )
-
 };
 
 export default Header;

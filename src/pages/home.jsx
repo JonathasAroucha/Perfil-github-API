@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { useQuery } from '../hooks/useQuerys'
 import Container from '../components/container'
 import Header from '../components/header'
 import UserContainer from '../components/userContainer'
@@ -9,18 +10,20 @@ import { context } from '../context/'
 
 export default function Home() {
     const ctx = useContext(context)
+    const query = useQuery();
+       
     return (
         <Container>
-            <Header />
-            <UserContainer>
+            <Header username={query.get('username')} />
+
+            <UserContainer> 
                 {ctx.userData?.name ?
                     <React.Fragment>
 
-                        <UserPicture url={ctx.userData?.avatar_url}
-                            alternativeText={ctx.userData?.login} />
+                        <UserPicture url={ctx.userData?.avatar_url} />
 
                         <UserDetails name={ctx.userData?.name}
-                            login={ctx.userData?.login}
+                            username={ctx.userData?.login}
                             bio={ctx.userData?.bio} />
 
                         <UserNumbers repos={ctx.userData?.public_repos}

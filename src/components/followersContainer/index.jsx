@@ -4,7 +4,15 @@ import {
     ListOfFollowersContainer,
     Follower,
     ProfileFollowers,
+    Button, ButtonsNavigation
 } from './styles';
+
+import {
+    GoArrowLeft,
+    GoHome,
+    GoArrowRight
+} from "react-icons/go";
+import { Link } from 'react-router-dom'
 
 const FollowersContainer = props => {
     return (
@@ -19,6 +27,23 @@ const FollowersContainer = props => {
                     </Follower>
                 ))}
             </ListOfFollowersContainer>
+            <ButtonsNavigation>
+                <Link to="/starred">
+                    <Button>
+                        <GoArrowLeft size={25} />
+                    </Button>
+                </Link>
+                <Link to="/">
+                    <Button>
+                        <GoHome size={25} />
+                    </Button>
+                </Link>
+                <Link to="/following">
+                    <Button>
+                        <GoArrowRight size={25} />
+                    </Button>
+                </Link>
+            </ButtonsNavigation>
         </Section>
     );
 }

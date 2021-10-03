@@ -4,7 +4,15 @@ import {
     ListOfFollowingContainer,
     Followin,
     ProfileFollowing,
+    Button,
+    ButtonsNavigation
 } from './styles';
+
+import {
+    GoArrowLeft,
+    GoHome
+} from "react-icons/go";
+import { Link } from 'react-router-dom'
 
 const FollowingContainer = props => {
     return (
@@ -19,6 +27,18 @@ const FollowingContainer = props => {
                     </Followin>
                 ))}
             </ListOfFollowingContainer>
+            <ButtonsNavigation>
+                <Link to="/followers">
+                    <Button>
+                        <GoArrowLeft size={25} />
+                    </Button>
+                </Link>
+                <Link to="/">
+                    <Button>
+                        <GoHome size={25} />
+                    </Button>
+                </Link>
+            </ButtonsNavigation>
         </Section>
     );
 }
